@@ -8,22 +8,22 @@ namespace Generics
 {
     internal class MaxNumber
     {
-        public double Num1, Num2, Num3;
-        public double MaximumFloat(double Num1, double Num2, double Num3)
+        public string FirstString, SecondString, ThirdString;
+        public string MaximumString(string FirstString, string SecondString, string ThirdString)
         {
-            if (Num1.CompareTo(Num2) > 0 && Num1.CompareTo(Num3) > 0)
+            if (FirstString.CompareTo(SecondString) > 0 && FirstString.CompareTo(ThirdString) > 0)
             {
-                return Num1;
+                return FirstString;
             }
-            else if (Num2.CompareTo(Num3) > 0 && Num2.CompareTo(Num1) > 0)
+            else if (SecondString.CompareTo(ThirdString) > 0 && SecondString.CompareTo(FirstString) > 0)
             {
-                return Num2;
+                return SecondString;
             }
-            else if (Num3.CompareTo(Num1) > 0 && Num3.CompareTo(Num2) > 0)
+            else if (ThirdString.CompareTo(FirstString) > 0 && ThirdString.CompareTo(SecondString) > 0)
             {
-                return Num3;
+                return ThirdString;
             }
-            return Num1;
+            return FirstString;
         }
     }
 }

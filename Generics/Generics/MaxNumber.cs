@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Generics
 {
-    internal class MaxInteger
+    internal class MaxNumber
     {
         public int Num1, Num2, Num3;
-        public int MaxNumber(int Num1, int Num2, int Num3)
+        public int MaxInteger(int Num1, int Num2, int Num3)
         {
             if (Num1.CompareTo(Num2) > 0 && Num1.CompareTo(Num3) > 0)
             {

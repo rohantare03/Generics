@@ -6,8 +6,8 @@ namespace Generics
         public static void Main(string[] args)
         {
             MaxNumber maxNumber = new MaxNumber();
-            int MaximumNumber = maxNumber.MaxInteger(11, 55, 85);
-            Console.WriteLine("Maximum Integer is " + MaximumNumber);
+            double MaximumNumber = maxNumber.MaximumFloat(111.3, 52.43, 89.345);
+            Console.WriteLine("Maximum Float Number is " + MaximumNumber);
 
         }
     }

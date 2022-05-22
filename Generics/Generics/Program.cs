@@ -6,8 +6,9 @@ namespace Generics
         public static void Main(string[] args)
         {
             MaxNumber maxNumber = new MaxNumber();
-            int MaximumInteger = maxNumber.MaxInteger(11, 43, 56); 
-            Console.WriteLine("The Maximum Integer Value is " + MaximumInteger);
+            int MaximumNumber = maxNumber.MaxInteger(11, 55, 85);
+            Console.WriteLine("Maximum Integer is " + MaximumNumber);
+
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Generics
             Array.Sort(values);
             return values;
         }
-        public R MaxValue(R[] values)
+        public R MaxValue(params R[] values)
         {
             var SortedValues = Sort(values);
             return SortedValues[^1];
@@ -28,6 +28,11 @@ namespace Generics
         {
             var Max = MaxValue(this.value);
             return Max;
+        }
+        public void PrintMax() 
+        {
+            var Max = MaxValue(this.value);
+            Console.WriteLine("Maximum value is " + Max);
         }
     }
 }

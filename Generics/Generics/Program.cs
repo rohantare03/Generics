@@ -5,14 +5,15 @@ namespace Generics
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("The Maximum Number is");
-            MaxNumber maxValue = new MaxNumber();
-            int Max = maxValue.MaxNum(11, 55, 34, 123, 145);
-            Console.WriteLine("Maximum Integer Value : " + Max);
-            double Max2 = maxValue.MaxxFloat(22.3, 121.233, 66.45, 77.34, 88.227);
-            Console.WriteLine("Maximum Float Value : " + Max2);
-            string Max3 = maxValue.MaxxString("Apple", "Banana", "Orange", "Pineapple", "Grapes");
-            Console.WriteLine("Maximum String Value : " + Max3);
+            Console.WriteLine("Welcome to Generics");
+            MaxNumber<int> genericsMax = new MaxNumber<int>();
+            genericsMax.MaxNum(23, 45, 67, 112, 8);
+
+            MaxNumber<double> genericsMax2 = new MaxNumber<double>();
+            genericsMax2.MaxNum(23.45, 76.44, 8.12, 174.222, 44.61);
+
+            MaxNumber<string> genericsMax3 = new MaxNumber<string>();
+            genericsMax3.MaxNum("Apple", "Orange", "Kiwi", "Watermelon", "pear");
         }
     }
 }
